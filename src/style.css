@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+
+  --color-studio-bg: #0a0a0a;
+  --color-studio-card: #171717;
+  --color-studio-text: #e5e5e5;
+  --color-studio-muted: #737373;
+  --color-studio-accent: #ea580c;
+  /* Burnt Orange */
+}
+
+@layer base {
+  body {
+    @apply bg-studio-bg text-studio-text font-sans antialiased selection:bg-studio-accent selection:text-white;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display tracking-tight text-white font-medium;
+  }
+}
+
+@layer utilities {
+  .noise-bg {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+  }
+
+  .hover-reveal {
+    @apply transition-all duration-500 ease-[cubic-bezier(0.16, 1, 0.3, 1)];
+  }
+
+  .editorial-line {
+    @apply h-[1px] bg-white/10 w-full;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-studio-bg;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-white/20 hover:bg-white/40;
+}
