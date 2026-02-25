@@ -1,3 +1,4 @@
+
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -8,6 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 export const About = () => {
     const sectionRef = useRef<HTMLDivElement>(null);
 
+    
     useGSAP(() => {
         gsap.from(".about-col", {
             scrollTrigger: {
