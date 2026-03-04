@@ -33,7 +33,7 @@ export const About = () => {
                 {/* Intro Side */}
                 <div className="md:col-span-4 about-col space-y-8 md:sticky top-32 self-start">
                     <span className="block text-[10px] uppercase tracking-[0.3em] font-mono text-studio-accent pb-4 border-b border-white/10 w-fit">
-                        The Architect
+                        The Architect.
                     </span>
                     <h2 className="text-4xl md:text-5xl font-display font-medium leading-[1.1] text-white">
                         Building the Future,<br />One Line at a Time.
