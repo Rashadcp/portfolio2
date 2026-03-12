@@ -53,7 +53,7 @@ export const About = () => {
                             className="w-full h-full object-cover filter grayscale sepia-[0.3] contrast-[1.1] group-hover:filter-none transition-all duration-700 transform group-hover:scale-105"
                         />
                         <span className="absolute bottom-4 left-4 text-[10px] tracking-widest uppercase font-mono text-white opacity-0 group-hover:opacity-100 transition-opacity z-20">
-                            / Personal Profile
+                            / Personal Profile.
                         </span>
                     </div>
                     <div className="space-y-4 md:space-y-8 pt-8 md:pt-24">
