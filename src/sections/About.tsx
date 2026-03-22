@@ -54,6 +54,9 @@ export const About = () => {
                         />
 
                         
+
+
+                        
                         <span className="absolute bottom-4 left-4 text-[10px] tracking-widest uppercase font-mono text-white opacity-0 group-hover:opacity-100 transition-opacity z-20">
                             / Personal Profile.
                         </span>
